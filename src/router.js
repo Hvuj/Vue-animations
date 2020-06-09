@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import List from './views/List.vue'
 import Cards from './views/Cards.vue'
+import Simple from './views/Simple.vue'
+import Stagger from './views/Stagger.vue'
+import States from './views/States.vue'
 
 Vue.use(Router)
 
@@ -36,6 +39,21 @@ export default new Router({
       path: '/cards',
       name: 'cards',
       component: Cards
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: Simple
+    },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: Stagger
+    },
+    {
+      path: '/states',
+      name: 'states',
+      component: States
     }
   ]
 })
